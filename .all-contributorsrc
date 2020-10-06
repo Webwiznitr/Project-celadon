@@ -33,6 +33,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "rahuldhangar",
+      "name": "Rahul Dhangar",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/7106661?v=4",
+      "profile": "https://resume.io/r/iYR1VBy19",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
