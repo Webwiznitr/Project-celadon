@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>certificate generator</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<h3>Certificate generator</h3>
+
+<div class="container">
+    <form action="">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your  first name">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+        <label for="date">Date of certificate issue</label>
+        <br>
+        <input type="date" id="date" name="date">
+
+        <br>
+        <br>
+        <br>
+        <label for="purpose">Purpose of certicate</label>
+        <textarea id="purpose" name="purpose" placeholder="purpose like participation i.e" style="height:50px"></textarea>
+        <h2>Choose certificate template</h2>
+        <div class="row">
+             <div class="column">
+                 <img src="image/template_1.jpg" alt="" style="width:100%">
+             </div>
+            <input type="radio" id="template_1" name="template" value="template_1">
+            <div class="column">
+                <img src="image/template_2.jpg" alt="" style="width:100%">
+            </div>
+            <input type="radio" id="template_2" name="template" value="template_2">
+            <div class="column">
+                <img src="image/template_3.jpg" alt="" style="width:100%">
+            </div>
+            <input type="radio" id="template_3" name="template" value="template_3">
+            <div class="column">
+                <img src="image/template_4.jpg" alt="" style="width:100%">
+            </div>
+            <input type="radio" id="template_4" name="template" value="template_4">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
