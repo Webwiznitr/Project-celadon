@@ -44,12 +44,16 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://github.com/deb2000-sudo"><img src="https://avatars2.githubusercontent.com/u/59384249?v=4" width="100px;" alt=""/><br /><sub><b>deb2000-sudo</b></sub></a><br /><a href="https://github.com/Webwiznitr/Project-celadon/commits?author=deb2000-sudo" title="Code">💻</a></td>
     <td align="center"><a href="http://aliferous.xyz/"><img src="https://avatars3.githubusercontent.com/u/63084088?v=4" width="100px;" alt=""/><br /><sub><b>Sumana Basu</b></sub></a><br /><a href="https://github.com/Webwiznitr/Project-celadon/commits?author=sumana2001" title="Code">💻</a> <a href="https://github.com/Webwiznitr/Project-celadon/commits?author=sumana2001" title="Documentation">📖</a></td>
     <td align="center"><a href="http://aliferous.xyz/"><img src="https://avatars2.githubusercontent.com/u/67703407?v=4" width="100px;" alt=""/><br /><sub><b>Aniket Pal</b></sub></a><br /><a href="https://github.com/Webwiznitr/Project-celadon/commits?author=Aniket762" title="Code">💻</a> <a href="https://github.com/Webwiznitr/Project-celadon/commits?author=Aniket762" title="Documentation">📖</a></td>
   </tr>
 </table>
+
+## Lead 😎
+<table>
+<tr>
+    <td align="center"><a href="https://github.com/deb2000-sudo"><img src="https://avatars2.githubusercontent.com/u/59384249?v=4" width="100px;" alt=""/><br /><sub><b>deb2000-sudo</b></sub></a><br /><a href="https://github.com/Webwiznitr/Project-celadon/commits?author=deb2000-sudo" title="Code">💻</a></td>
+ </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
