@@ -1,6 +1,7 @@
 <?php
 if (isset($_POST['firstname'])) {
     $font = realpath('Gabriola.ttf');
+    $template = $_GET['ddData.value'];
     $image = imagecreatefromjpeg("images/template_1.jpg");
     $color = imagecolorallocate($image, 19, 21, 22);
     imagettftext($image, 50, 0, 800, 600, $color, $font, $_POST['firstname']);
@@ -21,11 +22,52 @@ if (isset($_POST['firstname'])) {
     <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
     <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
+        <script type="text/javascript">
+        //Dropdown plugin data
+        var ddData = [
+            {
+                text: "Template 1",
+                value: "template_1.jpg",
+                selected: true,
+                description: "Template description",
+                imageSrc: "template/template_1.jpg"
+            },
+            {
+                text: "Template 2",
+                value: "template_2.jpg",
+                selected: false,
+                description: "Template description",
+                imageSrc: "template/template_2.jpg"
+            },
+            {
+                text: "Template 3",
+                value: "template_3.jpg",
+                selected: false,
+                description: "Description with LinkedIn",
+                imageSrc: "template/template_3.jpg"
+            },
+            {
+                text: "Template 3",
+                value:"template_3.jpg",
+                selected: false,
+                description: "Description with Foursquare",
+                imageSrc: "template/template_4.jpg"
+            }
+        ];
+    </script>
 </head>
 
 <body>
     <div class="header">
-
         <!--Content before waves-->
         <div class="inner-header flex">
             <h1>Certificate Generator</h1>
@@ -49,14 +91,21 @@ if (isset($_POST['firstname'])) {
 
     </div>
     <!--Header ends-->
-
     <div class="container main">
         <form method="post">
             <label for="fname">Enter Your Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your  first name">
-            <input type="submit" value="Generate Certificate ">
-            <br>
+            <input type="text" id="fname" name="firstname" placeholder="Your name">
+            <label>Select Template</label>
+            <div id="myDropdown">
+                
+            </div>
+            <br><br>
+            <input type="submit" value="Generate Certificate "> 
+            
+            <br><br>
             <button><a href="">click here to view certificate</a></button>
+
+        
         </form>
     </div>
 
@@ -135,5 +184,16 @@ if (isset($_POST['firstname'])) {
         </div>
     </footer>
 </body>
+<script type="text/javascript">
+    $('#myDropdown').ddslick({
+    data:ddData,
+    width:300,
+    selectText: "Select your template",
+    imagePosition:"right",
+    onSelected: function(selectedData){
+        //callback function: do something with selectedData;
 
+    }   
+});
+</script>
 </html>
