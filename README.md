@@ -1,6 +1,6 @@
 # Project-celadon
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 Certifiate generator
 
@@ -49,6 +49,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://aliferous.xyz/"><img src="https://avatars3.githubusercontent.com/u/63084088?v=4" width="100px;" alt=""/><br /><sub><b>Sumana Basu</b></sub></a><br /><a href="https://github.com/Webwiznitr/Project-celadon/commits?author=sumana2001" title="Code">💻</a> <a href="https://github.com/Webwiznitr/Project-celadon/commits?author=sumana2001" title="Documentation">📖</a></td>
     <td align="center"><a href="http://aliferous.xyz/"><img src="https://avatars2.githubusercontent.com/u/67703407?v=4" width="100px;" alt=""/><br /><sub><b>Aniket Pal</b></sub></a><br /><a href="https://github.com/Webwiznitr/Project-celadon/commits?author=Aniket762" title="Code">💻</a> <a href="https://github.com/Webwiznitr/Project-celadon/commits?author=Aniket762" title="Documentation">📖</a></td>
     <td align="center"><a href="https://resume.io/r/iYR1VBy19"><img src="https://avatars2.githubusercontent.com/u/7106661?v=4" width="100px;" alt=""/><br /><sub><b>Rahul Dhangar</b></sub></a><br /><a href="https://github.com/Webwiznitr/Project-celadon/commits?author=rahuldhangar" title="Code">💻</a></td>
+    <td align="center"><a href="http://omaresguerra.github.io"><img src="https://avatars1.githubusercontent.com/u/26062035?v=4" width="100px;" alt=""/><br /><sub><b>John Omar D. Esguerra</b></sub></a><br /><a href="https://github.com/Webwiznitr/Project-celadon/commits?author=omaresguerra" title="Code">💻</a></td>
   </tr>
 </table>
 
