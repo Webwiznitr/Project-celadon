@@ -33,7 +33,7 @@ More Details are coming soon follow the repo to stay updated.
 
 
 Initial starting of website with functionalities of name can be inserted in to certificate
-![](/images/initialfile.PNG)
+![](/images/current.gif)
 
 
 ## Contributors ✨
