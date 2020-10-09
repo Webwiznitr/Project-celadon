@@ -320,6 +320,7 @@
       var name = document.getElementById("fname").value;
       var event = document.getElementById("event").value;
       var date = document.getElementById("date").value;
+      var signature = document.getElementById("signature");
       console.log(template + " " + event + " " + name + " " + "date");
       $.ajax({
         url: "apis/index.php",
@@ -327,6 +328,7 @@
           name: name,
           event: event,
           date: date,
+          signature: signature,
           template: template,
         },
         type: "POST",
