@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['name']) && isset($_POST['event']) && isset($_POST['date']) &&isset($_POST['template'])) {
+if (isset($_POST['name']) && isset($_POST['event']) && isset($_POST['date']) && isset($_POST['template']) && isset($_POST['signature'])) {
     // echo 'yes';
     $font = realpath('../Gabriola.ttf');
     $template = $_POST['template'];
@@ -8,6 +8,7 @@ if (isset($_POST['name']) && isset($_POST['event']) && isset($_POST['date']) &&i
     imagettftext($image, 50, 0, 800, 600, $color, $font, $_POST['name']);
     imagettftext($image, 50, 0, 800, 900, $color, $font, $_POST['event']);
     imagettftext($image, 50, 0, 1200, 900, $color, $font, $_POST['date']);
+    imagettftext($image, 50, 0, 1200, 900, $color, $font, $_POST['signature']);
     $file = $_POST['name']."_".$_POST['event']."_".$_POST['date'];
     imagejpeg($image, "../certificates/" . $file . ".jpg");
     imagedestroy($image);
