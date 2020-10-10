@@ -148,10 +148,15 @@
 
             <div id="myDropdown"></div>
             <br />
-            <label for="signature">Upload Signature</label><br />
-            <input type="file" id="signature" name="signature" />
+            <label for="signature">Enter Name for Signature</label><br />
+            <input type="text" id="signature" name="signature" />
             <br /><br />
-            <button type="submit" class="btn btn-success" id="generate-btn">
+            <button
+              type="submit"
+              class="btn btn-success"
+              name="generate"
+              id="generate-btn"
+            >
               Generate Certificate
             </button>
             <button id="view-btn" class="btn btn-success">
@@ -320,8 +325,9 @@
       var name = document.getElementById("fname").value;
       var event = document.getElementById("event").value;
       var date = document.getElementById("date").value;
-      var signature = document.getElementById("signature");
-      console.log(template + " " + event + " " + name + " " + "date");
+      var signature = document.getElementById("signature").value;
+
+      console.log(template + " " + event + " " + name + " " + date);
       $.ajax({
         url: "apis/index.php",
         data: {

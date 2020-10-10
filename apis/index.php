@@ -1,14 +1,14 @@
 <?php
-if (isset($_POST['name']) && isset($_POST['event']) && isset($_POST['date']) && isset($_POST['template']) && isset($_POST['signature'])) {
+if (isset($_POST['name']) && isset($_POST['event']) && isset($_POST['date']) && isset($_POST['template']) && isset($_POST["signature"])  ) {
     // echo 'yes';
     $font = realpath('../Gabriola.ttf');
     $template = $_POST['template'];
     $image = imagecreatefromjpeg("../template/".$template);
     $color = imagecolorallocate($image, 19, 21, 22);
     imagettftext($image, 50, 0, 800, 600, $color, $font, $_POST['name']);
-    imagettftext($image, 50, 0, 800, 900, $color, $font, $_POST['event']);
+    imagettftext($image, 50, 0, 600, 900, $color, $font, $_POST['event']);
     imagettftext($image, 50, 0, 1200, 900, $color, $font, $_POST['date']);
-    imagettftext($image, 50, 0, 1200, 900, $color, $font, $_POST['signature']);
+    imagettftext($image, 50, 0, 900, 1050, $color, $font, $_POST['signature']);
     $file = $_POST['name']."_".$_POST['event']."_".$_POST['date'];
     imagejpeg($image, "../certificates/" . $file . ".jpg");
     imagedestroy($image);
