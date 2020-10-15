@@ -51,6 +51,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "calderaricaio",
+      "name": "Caio Calderari",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/542722?v=4",
+      "profile": "https://github.com/calderaricaio",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
