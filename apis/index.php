@@ -17,37 +17,6 @@ if (isset($_POST['name']) && isset($_POST['event']) && isset($_POST['date']) &&i
         echo(json_encode(array('status'=>'success','message' => $file)));
     }
 }
-// if (isset($_POST['generate'])) {
-    
-//       $name = strtoupper($_POST['name']);
-//       //template for certificate
-//       $template = $_POST['template'];
-//         echo $template;
-//       $createimage = imagecreatefrompng($image);
 
-//       //this is going to be created once the generate button is clicked
-//       $output = "certificate.png";
-//       $black = imagecolorallocate($createimage, 0, 0, 0);
-
-//       //Then we make use of the angle since we will also make use of it when calling the imagettftext function below
-//       $rotation = 0;
-
-//       //we then set the x and y axis to fix the position of our text name
-//       $origin_x = 800;
-//       $origin_y=600;
-//       $font_size = 50;
-      
-//       $certificate_text = $name;
-
-//       //font directory for name
-//       $drFont = "Gabriola.ttf";
-
-//       //function to display name on certificate picture
-//       $textname = imagettftext($createimage, $font_size, $rotation, $origin_x, $origin_y, $black, $drFont, $certificate_text);
-//       $textevent = imagettftext($createimage, $font_size, $rotation, $origin_x, $origin_y, $black, $drFont, $certificate_text);
-//       $textdate = imagettftext($createimage, $font_size, $rotation, $origin_x, $origin_y, $black, $drFont, $certificate_text);
-
-//       imagepng($createimage,$output,3);
-// }
 
 ?> 

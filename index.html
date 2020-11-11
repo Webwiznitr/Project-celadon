@@ -44,6 +44,12 @@
             selected: false,
             description: "Description with Foursquare",
             imageSrc: "template/template_4.jpg"
+        }, {
+            text: "Template 5",
+            value: "template_5.png",
+            selected: false,
+            description: "Description",
+            imageSrc: "template/template_5.png"
         }];
     </script>
 </head>
@@ -90,7 +96,10 @@
                     <label for="event">Event Name</label>
                     <input type="text" id="event" name="event" placeholder="Name of Event">
                     <label for="date">Date of issue of certificate:</label><br><br>
-                    <input type="date" id="date" name="date">
+                    <input type="date" id="date" name="date"><br><br>
+                    <label for="signature">Upload signature</label>
+                    <br><br>
+                    <input type="file" accept="image/*" name="file" id="inputImage" class="hide">
                     <br><br>
                     <label>Select Template</label>
 
@@ -225,9 +234,6 @@
 
                 var res = JSON.parse(response);
                 if (res.status == "success") {
-                    // alert(res.message);
-                    // $("#generate-btn").hide();
-                    // $('#view-btn').show();
                     var location = res.message;
                     swal('Certificate generated', '', 'success').then((
                         value) => {
@@ -240,12 +246,6 @@
             }
         });
     });
-    // $("#view-btn").click(function(e) {
-    //     e.preventDefault();
-    //     var certificateName = name + "_" + event + "_" + date;
-    //     console.log(certificateName);
-
-    // });
 </script>
 
 </html>
