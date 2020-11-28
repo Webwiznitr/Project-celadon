@@ -54,12 +54,6 @@
             selected: false,
             description: "Description with Foursquare",
             imageSrc: "template/template_4.jpg"
-        }, {
-            text: "Template 5",
-            value: "template_5.png",
-            selected: false,
-            description: "Description",
-            imageSrc: "template/template_5.png"
         }];
     </script>
 </head>
@@ -100,17 +94,16 @@
         </div>
         <div class="row">
             <div class="column">
-                <form action=" ">
+                <form action="./apis/index.php" method="POST" enctype="multipart/form-data">
+                    
                     <label for="fname">Person Name</label>
                     <input type="text" id="fname" name="name" placeholder="Name of person">
                     <label for="event">Event Name</label>
                     <input type="text" id="event" name="event" placeholder="Name of Event">
-                    <label for="date">Date of issue of certificate:</label><br><br>
-                    <input type="date" id="date" name="date"><br><br>
-                    <label for="signature">Upload signature</label>
-                    <br><br>
-                    <input type="file" accept="image/*" name="file" id="inputImage" class="hide">
-
+                    <label for="date">Date of issue of certificate:</label>
+                    <input type="text" id="date" name="date" placeholder="Issue Date">
+                    <label for="signature">Upload Signature</label>
+                    <input type="file" name="Signature" id="Signature" placeholder="Upload Signature">
                     <br><br>
                     <label>Select Template</label>
 
@@ -118,7 +111,7 @@
 
                     </div>
                     <br><br>
-                    <button type="submit" class="btn btn-success" id="generate-btn">Generate Certificate</button>
+                    <button type="submit" class="btn btn-success" id="generate-btn" name="submit">Generate Certificate</button>
                     <button id="view-btn" class="btn btn-success">click here to view certificate</button>
                 </form>
             </div>
