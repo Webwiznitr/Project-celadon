@@ -218,7 +218,7 @@
     // console.log(template);
     $('#view-btn').hide();
     $("#generate-btn").click(function(e) {
-        // e.preventDefault();
+        e.preventDefault();
         var name = document.getElementById('fname').value;
         var event = document.getElementById('event').value;
         var date = document.getElementById('date').value;
@@ -238,9 +238,6 @@
 
                 var res = JSON.parse(response);
                 if (res.status == "success") {
-                    // alert(res.message);
-                    // $("#generate-btn").hide();
-                    // $('#view-btn').show();
                     var location = res.message;
                     swal('Certificate generated', '', 'success').then((
                         value) => {
@@ -253,12 +250,6 @@
             }
         });
     });
-    // $("#view-btn").click(function(e) {
-    //     e.preventDefault();
-    //     var certificateName = name + "_" + event + "_" + date;
-    //     console.log(certificateName);
-
-    // });
 </script>
 
 </html>
