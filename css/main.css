@@ -148,6 +148,18 @@ input[type=submit]:hover {
     padding: 5px;
 }
 
+#template-img {
+    position: relative;
+}
+
+#preview {
+    width: 10%;
+    height: auto;
+    position: relative;
+    left: 77%;
+    top: -30%;
+
+}
 
 /*----- Footer Start -----*/
 
