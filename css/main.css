@@ -158,7 +158,7 @@ input[type=submit]:hover {
     position: relative;
     left: 77%;
     top: -30%;
-
+    display: none;
 }
 
 /*----- Footer Start -----*/
