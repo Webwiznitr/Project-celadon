@@ -26,7 +26,10 @@ if (isset($_POST['name']) && isset($_POST['event']) && isset($_POST['date']) &&i
     imagettftext($image, 50, 0, 1200, 900, $color, $font, $_POST['date']);
     //merge signature
     imagecopy($image, $targetImage, $dest_x , $dest_y, 0, 0, $targetWidth, $targetHeight);
-    $file = $_POST['name']."_".$_POST['event']."_".$_POST['date'];
+    $name = trim($_POST['name']);
+    $event = trim($_POST['event']);
+
+    $file = $name."_".$event;
     imagejpeg($image, "../certificates/" . $file . ".jpg");
     imagedestroy($image);
     $_SESSION['certificate'] = "../certificates/" . $file . ".jpg";
