@@ -120,7 +120,7 @@
                     <br><br>
                     <button type="submit" class="btn btn-success" id="generate-btn" name="submit">Generate
                         Certificate</button>
-                    <button id="view-btn" class="btn btn-success">click here to view certificate</button>
+                    <button id="view-btn" class="btn btn-success" id="download-btn">Download certificate</button>
                 </form>
             </div>
             <div class="column">
@@ -273,9 +273,16 @@
                                         .then((
                                             value) => {
                                             window.location =
-                                                "./certificates/" +
-                                                location +
-                                                ".jpg";
+                                                "./certificate.html";
+                                            $.ajax({
+                                                url: 'apis/download.php',
+                                                success: function(
+                                                    data) {
+                                                    console.log(
+                                                        'success'
+                                                    );
+                                                }
+                                            });
                                         });
                                 } else {
                                     swal(res.message, '', 'error');
